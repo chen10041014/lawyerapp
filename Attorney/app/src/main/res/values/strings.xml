@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">律聚人</string>
+    <string name="home_hot_case_type">热门案例类型</string>
+    <string name="search">搜索</string>
+    <string name="search_content">搜索内容</string>
+    <string name="more">更多</string>
+    <string name="msg_maxi_capacity">已达到照片选择上限</string>
+    <string name="commit">确定</string>
+    <string name="photos_num">%1$d张</string>
+    <string name="commit_num">确定(%1$d/%2$d)</string>
+    <string name="msg_no_camera">没找到摄像头</string>
+    <string name="load_error">网络加载失败</string>
+    <string name="resetpassword"><u>重设密码</u></string>
+    <string name="register_item">4546</string>
+
+
+    <drawable name="btn_normal">#ff0000</drawable>
+    <drawable name="btn_pressed">#00ff00</drawable>
+</resources>

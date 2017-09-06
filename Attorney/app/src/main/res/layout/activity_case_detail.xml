@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yuanjin.attorney.attorney.ui.activity.CaseDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:background="#F3F3F3"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/arrow_back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="8dp"
+                    android:src="@mipmap/arrow_left"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="案例详情"
+                    android:textColor="@color/text_color_333"
+                    android:textSize="15sp"/>
+
+                <ImageView
+                    android:id="@+id/collection_star"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="8dp"
+                    android:src="@mipmap/details_collection"/>
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/case_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:text="境外游安排购物买到假珠宝"
+                android:textColor="@color/text_color_333"
+                android:textSize="35sp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/case_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2017.06.20"
+                    android:textColor="#9FA0A2"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/case_collectionNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 收藏 12人"
+                    android:textColor="#9FA0A2"/>
+
+                <TextView
+                    android:id="@+id/case_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:text="商事-消费维权"
+                    android:textColor="#4A96D1"/>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/case_detailPic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/case_detailContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="家工商总局副局长马正其在湖南省调研时指出，工商和市场监管部门要进一步深化商事制度改革，全面加强事中事后监管，加大消费维权工作力度，提高工商信息化工作水平，稳妥推进综合行政执法改革，为服务和促进地方经济发展作出积极贡献。 　　马正其认真听取了湖南省工商局工作汇报，详细了解湖南省近年来商事制度改革、市场秩序监管、消费者权益保护、基层机构体制改革、信息化建设等情况。马正其指出，湖南省工商局在省委、省政府的正确领导下，认真贯彻党中央、国务院决策部署，深入推进商事制度改革，促进创业创新成效显著;全面加强市场监管，维护了良好的市场经济秩序;充分发挥工商部门在稳增长、促发展过程中的职能作用，服务经济建设成果突出;大力强化消费维权，维护了广大消费者的合法权益;信息化建设稳步推进，基层体制改革平稳进行，各项工作取得了显著成。 　　"
+                android:textSize="16sp"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="@color/case_detail_between"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:text="案例分析"
+                />
+
+            <TextView
+                android:layout_margin="10dp"
+                android:id="@+id/case_analyzeContent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="交通事故伤残鉴定,国晖上海交通事故律师,为您 提供全服务交通事故重师经验,胜诉率高收费低"/>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp"
+                android:background="@color/case_detail_between"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                <TextView
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="推荐律所"
+                    android:textColor="@color/text_color_666"/>
+
+                    <TextView
+                        android:id="@+id/lawoffice_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="更多 >"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="推荐详细的律所"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

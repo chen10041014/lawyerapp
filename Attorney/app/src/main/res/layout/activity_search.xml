@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yuanjin.attorney.attorney.ui.activity.SearchActivity">
+
+
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/rl_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#CE2D24"
+        android:gravity="center"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/iv_search"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/search_shape"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/search1"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/list_divider_color"/>
+
+        <EditText
+            android:id="@+id/edit_query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="55dp"
+            android:background="@null"
+            android:hint="@string/search_content"
+            android:imeOptions="actionSearch"
+            android:maxLength="15"
+            android:textColor="#9c9c9c"
+            android:textSize="12sp"/>
+
+        <TextView
+            android:id="@+id/tv_search_or_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:text="取消"/>
+
+    </RelativeLayout>
+
+    <!--头部-->
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tab_new_title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_new_show_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v4.view.ViewPager>
+
+</LinearLayout>

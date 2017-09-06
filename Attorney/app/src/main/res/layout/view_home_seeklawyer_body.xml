@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+            >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+
+    <ImageView
+        android:layout_marginTop="3dp"
+        android:id="@+id/iv_avatar_lawyer"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/tv_lawyeer_name"
+        android:layout_marginLeft="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="黄凯律师"
+        android:textColor="#333333"
+        android:textSize="14sp"/>
+
+    <ImageView
+        android:id="@+id/law_type"
+        android:layout_width="35dp"
+        android:layout_height="15dp"
+        android:layout_gravity="right"
+        android:src="@mipmap/ic_launcher"/>
+
+    <TextView
+        android:id="@+id/ask_content"
+        android:layout_marginTop="25dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"
+        android:textSize="12sp"
+        android:textColor="#404042"
+        android:text="213212311111111111111111111111111111111111111111111111111111111111111111111111111"
+        />
+
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017.06.20"
+        android:textSize="10sp"
+        android:textColor="#9FA0A2"/>
+
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="100dp"
+        android:id="@+id/tv_keep_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="#9FA0A2"
+        android:text="关注 12人"
+        />
+
+    </FrameLayout>
+
+    <View
+        android:layout_marginTop="90dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#dddddd"/>
+
+</FrameLayout>

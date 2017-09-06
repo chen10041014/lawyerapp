@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#CE2D24"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/iv_search_box"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@mipmap/search_box"/>
+
+    </RelativeLayout>
+
+
+ <!--   <com.androidkun.PullToRefreshRecyclerView
+        android:id="@+id/pullToRefreshRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>-->
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--        <RelativeLayout
+
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:background="#CE2D24"
+                            android:gravity="center">
+
+                            <ImageView
+                                android:layout_gravity="center"
+                                android:layout_width="330dp"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/iv_search_box"
+                                android:src="@mipmap/search_box"/>
+
+                        </RelativeLayout>-->
+
+
+                <com.jude.rollviewpager.RollPagerView
+                    android:id="@+id/rollViewPager"
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    app:rollviewpager_play_delay="3000"/>
+
+                <!-- <View
+                     android:layout_width="match_parent"
+                     android:layout_height="10dp"
+                     android:background="@color/list_divider_color"/>-->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/home_hot_case_type"
+                    android:textSize="@dimen/home_hot_text_size"/>
+
+                <com.yuanjin.attorney.attorney.ui.view.MyGridView
+                    android:id="@+id/home_gridview"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:layout_marginTop="5dp"
+                    android:listSelector="@color/colorTransparent"
+                    android:numColumns="4"
+                    android:verticalSpacing="7dp"/>
+
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="25dp"
+                        android:background="@color/list_divider_color"/>
+
+                    <TextView
+                        android:id="@+id/home_seeklawyer_more"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginRight="25dp"
+                        android:layout_marginTop="30dp"
+                        android:text="@string/more"
+                        android:textColor="#333333"
+                        android:textSize="10sp"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="3dp"
+                        android:layout_marginRight="10dp"
+                        android:src="@mipmap/arrow_right"/>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="10dp"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@mipmap/switch_zlsbg"/>
+
+                        <ImageView
+                            android:id="@+id/seek_lawoffice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="38dp"
+                            android:src="@mipmap/switch_zls"
+                            android:visibility="visible"/>
+
+                        <TextView
+                            android:id="@+id/tv_seekLawOffice"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginRight="38dp"
+                            android:text="找律所"
+                            android:textColor="#fff"
+                            android:textSize="12sp"/>
+
+                        <ImageView
+                            android:id="@+id/seek_lawyer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="38dp"
+                            android:src="@mipmap/switch_zls"
+                            android:visibility="invisible"/>
+
+                        <TextView
+                            android:id="@+id/tv_seekLawyer"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="38dp"
+                            android:text="找律师"
+                            android:textColor="#878788"
+                            android:textSize="12sp"/>
+
+
+                        <!--        <Button
+                                    android:id="@+id/seek_lawoffice"
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="40dp"
+                                    android:background="@drawable/home_btn_selector_shape1"
+                                    android:text="找律所"
+                                    android:textSize="12sp"/>
+
+
+                                <Button
+                                    android:id="@+id/seek_lawyer"
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:layout_gravity="center"
+                                    android:layout_marginLeft="40dp"
+                                    android:background="@drawable/home_btn_selector_shape2"
+                                    android:text="找律师"
+                                    android:textSize="12sp"/>-->
+
+                    </FrameLayout>
+
+                </FrameLayout>
+
+
+
+                <com.yuanjin.attorney.attorney.ui.view.MyListView
+                    android:listSelector="#00000000"
+                    android:id="@+id/lv_seeklawyer"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:divider="@null">
+                </com.yuanjin.attorney.attorney.ui.view.MyListView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+
+
+</LinearLayout>

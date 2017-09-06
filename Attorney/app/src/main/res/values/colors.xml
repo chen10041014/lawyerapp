@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTransparent">#00ffffff</color>
+    <color name="color_red">#CE2D24</color>
+    <color name="yellow">#eaed06</color>
+    <color name="radiobutton_uncheck">#000000</color>
+    <color name="radiobutton_checked">#ffffff</color>
+    <color name="radiobutton1">#ECEBEB</color>
+
+    <color name="list_line_between">#DCDBDB</color>
+
+    <color name="text_color_333">#333333</color>
+    <color name="text_color_666">#666666</color>
+
+    <color name="bg_floder_press">#bdbdbd</color>
+
+    <color name="case_detail_between">#EEEFF1</color>
+
+    <color name="list_divider_color">#DADADA</color>
+    <color name="white">#fff</color>
+
+
+
+    //自定义饼状图
+    <color name="dark">#0097a7</color>
+    <color name="grey">#e0e0e0</color>
+    <color name="gray_dark">#666666</color>
+    <color name="black_alpha_light">#3c3f41</color>
+    <color name="black_light">#383838</color>
+    <color name="blue">#03a9f4</color>
+    <color name="red">#ff4081</color>
+</resources>

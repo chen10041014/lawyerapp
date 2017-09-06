@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="general_viewpage_arrays">
+        <item>律师</item>
+        <item>律所</item>
+        <item>案例</item>
+        <item>问答</item>
+    </string-array>
+
+    <string-array name="spingarr">
+        <item>北京</item>
+        <item>上海</item>
+        <item>深圳</item>
+    </string-array>
+
+</resources>

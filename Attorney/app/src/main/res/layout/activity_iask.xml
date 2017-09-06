@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yuanjin.attorney.attorney.ui.activity.IAskActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#CE2D24">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@mipmap/white_arrow_left"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="我要提问"
+            android:textColor="#ffffff"
+            android:textSize="17sp"/>
+
+        <TextView
+            android:id="@+id/commit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:text="提交"
+            android:textColor="#ffffff"
+            android:textSize="13sp"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E2E3E4"/>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp">
+
+
+        <EditText
+            android:id="@+id/et_input_content"
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_margin="10dp"
+            android:background="@null"
+            android:gravity="start"
+            android:hint="输入你想要咨询的内容"
+            android:maxLength="300"
+            />
+
+        <TextView
+            android:id="@+id/tv_surplus_length"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_margin="10dp"
+            android:text="300"
+            android:textColor="#9FA0A2"/>
+
+
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#E2E3E4"/>
+
+    <!--  <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:orientation="horizontal"
+          android:padding="6dp">
+
+          <Button
+              android:background="@drawable/i_ask_button_shape"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:text="知产"/>
+
+          <Button
+              android:background="@drawable/i_ask_button_shape"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:text="民事"/>
+
+          <Button
+              android:background="@drawable/i_ask_button_shape"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:text="商事"/>
+
+          <Button
+              android:background="@drawable/i_ask_button_shape"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:text="型号"/>
+
+          <Button
+              android:background="@drawable/i_ask_button_shape"
+              android:layout_width="0dp"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:text="行政"/>
+
+
+      </LinearLayout>-->
+
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <RadioButton
+            android:id="@+id/rt_1"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_backgroud"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="知产"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/rt_2"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_backgroud"
+            android:button="@null"
+            android:gravity="center"
+            android:text="民事"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/rt_3"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_backgroud"
+            android:button="@null"
+            android:gravity="center"
+            android:text="商事"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/rt_4"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_backgroud"
+            android:button="@null"
+            android:gravity="center"
+            android:text="刑事"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="12sp"/>
+
+        <RadioButton
+            android:id="@+id/rt_5"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton_backgroud"
+            android:button="@null"
+            android:gravity="center"
+            android:text="行政"
+            android:textColor="@color/radiobutton_textcolor"
+            android:textSize="12sp"/>
+
+    </RadioGroup>
+
+
+
+
+
+    <RadioGroup
+        android:visibility="invisible"
+        android:id="@+id/radioGroup1"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_margin="5dp"
+            android:id="@+id/rt_11"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton1_backgroud"
+            android:button="@null"
+            android:checked="true"
+            android:gravity="center"
+            android:text="推荐"
+            android:textColor="@color/radiobutton1_textcolor"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:layout_margin="5dp"
+            android:id="@+id/rt_12"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton1_backgroud"
+            android:button="@null"
+            android:gravity="center"
+            android:text="婚姻继承"
+            android:textColor="@color/radiobutton1_textcolor"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:layout_margin="5dp"
+            android:id="@+id/rt_13"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton1_backgroud"
+            android:button="@null"
+            android:gravity="center"
+            android:text="房产纠纷"
+            android:textColor="@color/radiobutton1_textcolor"
+            android:textSize="10sp"/>
+
+        <RadioButton
+            android:layout_margin="5dp"
+            android:id="@+id/rt_14"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:layout_weight="1"
+            android:background="@drawable/radiobutton1_backgroud"
+            android:button="@null"
+            android:gravity="center"
+            android:text="遗产纠纷"
+            android:textColor="@color/radiobutton1_textcolor"
+            android:textSize="10sp"/>
+
+    </RadioGroup>
+
+
+
+
+
+
+
+
+
+ <!--   <LinearLayout
+        android:id="@+id/ll_rb_civil"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginLeft="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:textColor="@color/text_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="推荐"/>
+
+        <Button
+            android:textColor="@color/text_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="婚姻继承"/>
+
+        <Button
+            android:textColor="@color/text_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="房产纠纷"/>
+
+        <Button
+            android:textColor="@color/text_color_333"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="遗产纠纷"/>
+
+
+    </LinearLayout>-->
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="@color/list_divider_color"/>
+
+    <GridView
+        android:id="@+id/noScrollgridview"
+        android:layout_width="290dp"
+        android:layout_height="100dp"
+        android:layout_marginLeft="5dp"
+        android:horizontalSpacing="3dp"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="5dp">
+    </GridView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/pic_upload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:src="@mipmap/pic_upload"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传图片"
+                android:textColor="@color/text_color_333"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="最多上传9张图片"
+                android:textColor="@color/text_color_666"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+
+</LinearLayout>

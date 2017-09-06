@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yuanjin.attorney.attorney.ui.activity.LoginActivity">
+
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:background="@color/color_red"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/white_arrow_left"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="手机号登录"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="注册"
+            android:layout_marginRight="10dp"
+            android:textColor="#fff"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/phone_num"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:hint="手机号"
+        android:maxLines="11"
+        android:textColorHint="#9c9c9c"
+        android:background="@drawable/login_btn_shape"/>
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/login_btn_shape"
+        android:hint="密码"
+        android:maxLines="30"
+        android:textColorHint="#9c9c9c"/>
+
+    <Button
+        android:id="@+id/login"
+        android:layout_marginTop="20dp"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:text="登录"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:background="@drawable/home_btn_selector_shape1"/>
+
+
+    <TextView
+        android:id="@+id/reset_password"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="16sp"
+        android:text="@string/resetpassword"/>
+
+</LinearLayout>

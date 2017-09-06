@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.yuanjin.attorney.attorney">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.LOCATION_HARDWARE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:name=".utils.ContextUtil"
+        android:allowBackup="true"
+        android:icon="@mipmap/app_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".ui.activity.MainActivity">
+        </activity>
+        <activity
+            android:name=".ui.activity.SplashActivity"
+            android:theme="@style/AppTheme.FULLSCREEN">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".ui.activity.SearchActivity">
+        </activity>
+        <activity android:name=".ui.activity.LawOfficeDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.LawyerDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.IAskActivity">
+        </activity>
+        <activity android:name=".ui.activity.Lawyer_EvaluateActivity">
+        </activity>
+        <activity android:name=".ui.activity.Lawoffice_EvaluateActivity">
+        </activity>
+        <activity android:name=".ui.activity.PhotoPickerActivity"/>
+        <activity android:name=".ui.activity.PreviewPhotoActivity"/>
+        <activity android:name=".ui.activity.AskDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.BaseActivity">
+        </activity>
+        <activity android:name=".ui.activity.MyAskActivity">
+        </activity>
+        <activity android:name=".ui.activity.CaseDetailActivity">
+        </activity>
+        <activity android:name=".ui.activity.LoginActivity">
+        </activity>
+        <activity android:name=".ui.activity.RegisterActivity">
+        </activity>
+    </application>
+
+</manifest>

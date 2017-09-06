@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        >
+
+        <Spinner
+            android:id="@+id/main_sp1"
+            style="@style/style_spinner">
+        </Spinner>
+        <!--这个是spinner之间的分割线-->
+        <ImageView
+            style="@style/style_mian_verline"/>
+
+
+        <Spinner
+            android:id="@+id/main_sp2"
+            style="@style/style_spinner"
+            ></Spinner>
+
+        <ImageView
+            style="@style/style_mian_verline"/>
+
+
+        <Spinner
+            android:id="@+id/main_sp3"
+            style="@style/style_spinner"
+            ></Spinner>
+
+    </LinearLayout>
+
+
+    <!--设置一条分割线-->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="16dp"
+        android:background="#dcdcdc"
+        />
+
+  <ListView
+      android:divider="@color/list_divider_color"
+      android:listSelector="#00000000"
+      android:dividerHeight="18dp"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:id="@+id/lv_lawoffice_detail"></ListView>
+
+</LinearLayout>

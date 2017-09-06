@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+       android:shape="rectangle"><!--     渐变色 -->
+    <gradient
+        android:angle="270"
+        android:endColor="#fff"
+        android:startColor="#fff"
+
+      />
+    <padding
+        android:bottom="7dp"
+        android:left="7dp"
+        android:right="7dp"
+        android:top="7dp"/><!--     设置圆角 -->
+    <corners android:radius="20dp"/><!--     填充色 -->
+    <stroke
+        android:width="0.5dp"
+        android:color="#9c9c9c"
+        android:dashGap="0dp"
+        android:dashWidth="3dp"/><!--     最小宽高 -->
+    <size
+        android:width="10dp"
+        android:height="48dp"/>
+</shape>
